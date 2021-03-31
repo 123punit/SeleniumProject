@@ -26,9 +26,9 @@ public class CompactSUVPage extends BasePage {
 			driver.getTitle();
 			driver.getCurrentUrl();
 			if (CarRenaultKiger.isDisplayed()) {
-				CarRenaultKiger.click();
 				logger.info("Successfully click on the element :" + CarRenaultKiger.getText());
 			}
+			CarRenaultKiger.click();
 		} catch (Exception e) {
 			logger.error("Element is not clickable to RnaultKiger :" + e);
 		}
@@ -41,9 +41,9 @@ public class CompactSUVPage extends BasePage {
 			verifyElementPresent(CarHyundaiVenue);
 			if (CarHyundaiVenue.isDisplayed()) {
 				mouseHover(CarHyundaiVenue);
-				CarHyundaiVenue.click();
 				logger.info("Successfully click on the element :" + CarHyundaiVenue.getText());
 				logger.info("We are on Compact SUC Page : " + driver.getCurrentUrl());
+				CarHyundaiVenue.click();
 			}
 		} catch (Exception e) {
 			logger.error("Element is not clickable to HyundaiVenue :" + e);

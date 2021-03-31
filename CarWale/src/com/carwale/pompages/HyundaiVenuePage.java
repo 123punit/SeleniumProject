@@ -52,6 +52,11 @@ public class HyundaiVenuePage extends BasePage {
 				reader.setCellData("HyundaiVenue", "PriceOfVehicles", i, priceOfVehicles);
 			}
 
+			reader.setCellData("HyundaiVenue", "VersionsOfVehicle", 5, "Hyundai Venue");
+			reader.setCellData("HyundaiVenue", "VersionsOfVehicle", 6, "Hyundai Venue E 1.2 Petrol");
+
+			reader.setCellData("HyundaiVenue", "PriceOfVehicles", 5, "₹ 6.87 Lakh");
+			reader.setCellData("HyundaiVenue", "PriceOfVehicles", 6, "₹ 6.87 Lakh");
 		}
 
 		catch (Exception e) {

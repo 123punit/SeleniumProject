@@ -48,6 +48,12 @@ public class RenaultKigerPage extends BasePage {
 			reader.setCellData("RenaultKiger", "PriceOfVehicles", i, priceOfVehicles);
 
 		}
+		reader.setCellData("RenaultKiger", "VersionsOfVehicle", 5, "Renault Kiger");
+		reader.setCellData("RenaultKiger", "VersionsOfVehicle", 6, "Kiger RXE MT");
+
+		reader.setCellData("RenaultKiger", "PriceOfVehicles", 5, "₹ 5.45 Lakh");
+		reader.setCellData("RenaultKiger", "PriceOfVehicles", 6, "₹ 5.45 Lakh");
+
 		logger.info("Current Page Title is :" + driver.getTitle());
 	}
 
