@@ -1,0 +1,102 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Mar 29 16:17:28 IST 2021</td>
+</tr>
+<tr><td>Total time:</td><td>281 seconds (281839 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.carwale.testscripts.Scenario1_StoreRnaultKigerSUVPriceVariants.TC_01_NavigatetoHomePage()'><b>TC_01_NavigatetoHomePage</b><br>Test class: com.carwale.testscripts.Scenario1_StoreRnaultKigerSUVPriceVariants<br/>
+<a href="#Output-1632670136" onClick='toggleBox("Output-1632670136", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1632670136" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1632670136">
+You are Succesfully Navigate to :New Cars in India 2021 | New Car Information | Best New Cars - CarWale<br/>
+You are Navigate to :New Cars in India 2021 | New Car Information | Best New Cars - CarWale<br/>
+You are on RenaultKiger Page : New Cars in India 2021 | New Car Information | Best New Cars - CarWale<br/>
+Scenario 01 - failed org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=89.0.4389.90)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'DESKTOP-QEGKNPH', ip: '192.168.0.109', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.90, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\Sunit\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64825}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7b1b8c3606fc66ab13674f0e8f7e1ce6
+*** Element info: {Using=xpath, value=(//div[@id='root']/div//table)[2]}<br/>
+</div>
+</td>
+<td></td>
+<td>273</td>
+<td>com.carwale.testscripts.Scenario1_StoreRnaultKigerSUVPriceVariants@72b6cbcc</td></tr>
+</table><p>
+</body>
+</html>
